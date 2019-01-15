@@ -1,7 +1,7 @@
 <h1>Bannertool GUI ver2.0.0 Made by Daniel</h1>
 
 What is this? 
-•Bannertool GUI is a program that uses bannertool.exe (Made by Steveice10) for generate of automatic way files like banner.bin, info.smdh and icon.bin.
+<br>•Bannertool GUI is a program that uses bannertool.exe (Made by Steveice10) for generate of automatic way files like banner.bin, info.smdh and icon.bin.
 
 Features : 
 •Clear Mode : clears the files on the folder result for you. 
