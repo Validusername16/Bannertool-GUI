@@ -24,7 +24,7 @@ IF [%banner%]==[found] SET bannersfiles=found
 IF [%cgfx%]==[found] SET bannersfiles=found
 
 echo Bannertool made by: Steveice10
-echo Bannertool GUI v2.0.0 made by: Daniel
+echo Bannertool GUI v2.0.1 made by: Daniel, some grammar edited by FlameKat53
 IF EXIST program\bannertool.exe SET bannertoolexe=found
 IF [%bannertoolexe%]==[notfound] goto :bannertoolnotfound
 echo.
@@ -56,7 +56,7 @@ exit
 :BuildMode
 call :ColorText 0e "------------------=[BannerTool GUI]=------------------"
 echo.
-call :ColorText 0e "Found files"
+call :ColorText 0e "Files Found"
 echo.
 IF [%banner%]==[found] call :ColorText 0a "banner.png - Found"
 IF [%banner%]==[notfound] call :ColorText 0c "banner.png - Not Found"
@@ -77,7 +77,7 @@ goto :next
 
 :end
 call :ColorText 0c "Error"
-echo Missing files needed to build all the files. Make sure to have icon.png, audio.wav and banner.png or banner.cgfx in the assets folder. Press enter to exit
+echo 1 or more of the files needed to build all of the files are missing. Be sure to have an icon.png, audio.wav and banner.png or banner.cgfx in the "assets" folder. Press enter to exit
 echo.
 pause>output_log.txt
 del output_log.txt
@@ -128,7 +128,7 @@ goto :continue
 
 :askdelete
 call :ColorText 0c "WARNING"
-echo Previus generated files (like banner.bin, icon.bin and info.smdh) were found on the folder "result". Generate new files will overwrite those already generated files.
+echo Previously generated files (such as banner.bin, icon.bin and info.smdh) were found in the "result" folder. Generating new files will overwrite those already generated.
 echo.
 :selectoverwrite
 SET /p "select=Overwrite and continue? (y: yes, n: no) "
@@ -136,7 +136,7 @@ IF [%select%]==[y] goto :secondthird
 IF [%select%]==[n] goto :finish
 echo.
 call :ColorText 0c "Error"
-echo Invalid option, Select a valid option.
+echo Invalid option, Please select a valid option.
 echo.
 goto :selectoverwrite
 
@@ -159,7 +159,7 @@ IF [%result4%]==[found] echo Deleted 1 file. "(result\info.smdh)"
 
 IF EXIST "result" rd "result"
 
-call :ColorText 0a "Successfully deleted files! Now the program will generate files."
+call :ColorText 0a "Successfully deleted files! Now generating new files."
 :continue
 echo.
 call :ColorText 0e "------------------=[BannerTool GUI]=------------------"
@@ -186,7 +186,7 @@ echo.
 echo.
 echo.
 echo.
-call :ColorText 0a "Successfully generated files. The files can be found in the folder result. Press enter to exit"
+call :ColorText 0a "Successfully generated files. These files can be found in the result folder. Press enter to exit"
 pause>output_log.txt
 del output_log.txt
 exit
@@ -196,7 +196,7 @@ echo.
 echo.
 echo.
 echo.
-call :ColorText 0c "Cancelled process of creating files. Press enter to exit."
+call :ColorText 0c "Canceled process of creating files. Press enter to exit."
 pause>output_log.txt
 del output_log.txt
 exit
@@ -207,7 +207,7 @@ SET CIA_DESCRIPTION=
 SET CIA_AUTHOR=
 echo.
 call :ColorText 0c "Error"
-echo You need to type something!
+echo You need to type something! (It doesn't matter what)
 goto :chooseciainfo
 
 :ClearMode
@@ -250,14 +250,14 @@ del output_log.txt
 exit
 
 :GoBackToMainMenu
-echo You selected to not delete the files. Exiting to Mode select
+echo You have selected to not delete the older files. Exiting to Mode select
 echo.
 goto :STARTOFEVERYTHING
 
 :bannertoolnotfound
 echo.
 call :ColorText 0c "Error"
-echo "bannertool.exe" could not be found on the folder program. Make sure to download lastest version from https://github.com/Steveice10/bannertool/releases and place it in the "program" folder and be sure that the file is named "bannertool.exe". Press enter to exit.
+echo "bannertool.exe" could not be found in the program folder. Make sure to download lastest version from https://github.com/Steveice10/bannertool/releases and place it in the "program" folder and be sure that the file is named "bannertool.exe". Press enter to exit.
 pause>output_log.txt
 del output_log.txt
 exit
