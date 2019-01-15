@@ -24,7 +24,7 @@ IF [%banner%]==[found] SET bannersfiles=found
 IF [%cgfx%]==[found] SET bannersfiles=found
 
 echo Bannertool made by: Steveice10
-echo Bannertool GUI v2.0.1 made by: Daniel, some grammar edited by FlameKat53
+echo Bannertool GUI v2.0.1 made by: Daniel
 IF EXIST program\bannertool.exe SET bannertoolexe=found
 IF [%bannertoolexe%]==[notfound] goto :bannertoolnotfound
 echo.
