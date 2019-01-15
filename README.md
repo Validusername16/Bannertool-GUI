@@ -4,7 +4,7 @@
 <br>• Bannertool GUI is a program that uses bannertool.exe, Made by [Steveice10](https://github.com/Steveice10), to automatically generate files such as banner.bin, info.smdh and icon.bin.
 
 <b>IMPORTANT</b>
-<br>• Download the lastest bannertool.exe version from Steveice10's [repository](https://github.com/Steveice10/bannertool/releases) and place it inside the "program" folder which is inside the Bannertool GUI folder. If you don't do this, Bannertool GUI won't work.
+<br>• Please Download the lastest bannertool.exe version from Steveice10's [repository](https://github.com/Steveice10/bannertool/releases) and place it inside the "program" folder, which is inside the Bannertool GUI folder. If you don't do this, Bannertool GUI won't work.
 
 <b>Features:</b>
 <br>• Clear Mode: clears the files in the folder result for you. 
