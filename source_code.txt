@@ -251,7 +251,6 @@ exit
 
 :GoBackToMainMenu
 echo You selected to not delete the files. Exiting to Mode select
-
 echo.
 goto :STARTOFEVERYTHING
 
